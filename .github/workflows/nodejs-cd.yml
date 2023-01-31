@@ -28,8 +28,6 @@ jobs:
              port: 22
              script: |
               cd /home/ubuntu/apps/ga-cicd-nodejs
-              export NVM_DIR=~/.nvm
-              source /home/ubuntu/.nvm/nvm.sh
               git pull origin master
               git status
               npm install --only=prod
